@@ -41,7 +41,7 @@ def getshopTempleteMap(username, password):
     # print(session_id)
     # print(username)
 
-    # 准备把cookie 准备成需要的格式
+    # 准备把selenium 格式的 cookie   转换成urllib需要的格式
     cookie = [item['name'] + '=' + item['value'] for item in browser.get_cookies()]
     print(cookie)
     cookie_str = ';'.join(item for item in cookie)
